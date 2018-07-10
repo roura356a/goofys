@@ -300,6 +300,7 @@ func (fs *Goofys) detectBucketLocationByHEAD() (err error, isAws bool) {
 			return err, false
 		}
 
+		// TODO: CONTINUE HERE
 		u.Scheme = endpoint.Scheme
 		u.Host = endpoint.Host
 	}
