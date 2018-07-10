@@ -288,6 +288,7 @@ type FlagStorage struct {
 
 	// S3
 	Endpoint       string
+	AccessType	   string
 	Region         string
 	RegionSet      bool
 	StorageClass   string
@@ -361,6 +362,7 @@ func PopulateFlags(c *cli.Context) (ret *FlagStorage) {
 
 		// S3
 		Endpoint:       c.String("endpoint"),
+		AccessType:		c.String("path"),
 		Region:         c.String("region"),
 		RegionSet:      c.IsSet("region"),
 		StorageClass:   c.String("storage-class"),
