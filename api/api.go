@@ -35,7 +35,7 @@ type Config struct {
 
 	// S3
 	Endpoint       string
-	AccessType	   string
+	AccessType     string
 	Region         string
 	RegionSet      bool
 	StorageClass   string
