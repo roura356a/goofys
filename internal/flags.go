@@ -146,6 +146,12 @@ func NewApp() (app *cli.App) {
 			},
 
 			cli.StringFlag{
+				Name:  "access-type",
+				Value: "",
+				Usage: "Access type. Supported values: path, virtual-host (default: path)",
+			},
+
+			cli.StringFlag{
 				Name:  "region",
 				Value: "us-east-1",
 				Usage: "The region to connect to. Usually this is auto-detected." +
